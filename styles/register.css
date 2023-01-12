@@ -12,6 +12,8 @@
 	padding: 0 8%;
 	background-color: antiquewhite;
 	position: relative;
+	margin-bottom: 10vh;
+	min-height: 80px;
 }
 
 nav {
@@ -34,31 +36,44 @@ nav {
 /* REGISTER */
 
 .login-container {
-	height: 90vh;
+	/*height: 90vh;*/
 	display: flex;
 	align-items: center;
+	margin: auto;
+	width: 80vw;
+	height: fit-content;
 }
 
 form {
 	display: flex;
-	margin: auto;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	background-color: antiquewhite;
-	height: 450px;
-	width: 70%;
+	height: 100%;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.columns-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
 }
 
 input[type="text"],
 input[type="password"],
-input[type="email"] {
-	width: 200px;
+input[type="email"],
+textarea {
+	width: 100%;
 	padding: 16px 20px;
 	margin: 8px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+	max-width: 280px;
 }
 
 button {
@@ -68,6 +83,33 @@ button {
 	margin: 8px 0;
 	border: none;
 	cursor: pointer;
-	width: 200px;
+	width: 30%;
 	margin-top: 10%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 28%;
+	align-items: center;
+}
+/*
+textarea {
+	width: 100%;
+}*/
+
+@media (max-width: 800px) {
+	.columns-container {
+		flex-direction: column;
+	}
+	.login-container {
+		width: 50vw;
+		margin-bottom: 40px;
+	}
+	.column {
+		width: 80%;
+	}
+	.button {
+		width: 200%;
+	}
 }

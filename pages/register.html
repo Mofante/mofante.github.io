@@ -14,61 +14,83 @@
 			</nav>
 		</div>
 		<div class="login-container">
-			<form>
-				<input type="text" placeholder="Enter Username" name="uname" required />
-				<input
-					type="password"
-					placeholder="Enter Password"
-					name="psw"
-					required
-				/>
-				<input
-					type="password"
-					placeholder="Repeat Password"
-					name="rpsw"
-					required
-				/>
-				<input type="email" placeholder="Enter Email" name="email" required />
-				<input type="text" placeholder="Enter Name" name="name" required />
-				<input
-					type="text"
-					placeholder="Enter Surname"
-					name="surname"
-					required
-				/>
-				<input
-					type="text"
-					placeholder="Enter Country"
-					name="coountry"
-					required
-				/>
-				<input
-					type="text"
-					placeholder="Enter Language"
-					name="laguage"
-					required
-				/>
-				<input type="text" placeholder="Enter City" name="city" required />
-				<input
-					type="text"
-					placeholder="Enter Streetname"
-					name="street"
-					required
-				/>
-				<input
-					type="text"
-					placeholder="Enter Zipcode"
-					name="zipcode"
-					required
-				/>
-				<input
-					type="text"
-					placeholder="Enter House Number"
-					name="housenumber"
-					required
-				/>
-				<button type="submit">Login</button>
-				<p>Don't have an account? <a href="">Register now.</a></p>
+			<form name="register-form">
+				<div class="columns-container">
+					<div class="column">
+						<input
+							type="text"
+							placeholder="Enter Username"
+							name="uname"
+							required
+						/>
+						<input
+							type="password"
+							placeholder="Enter Password"
+							name="psw"
+							required
+						/>
+						<input
+							type="password"
+							placeholder="Repeat Password"
+							name="rpsw"
+							required
+						/>
+						<input
+							type="email"
+							placeholder="Enter Email"
+							name="email"
+							required
+						/>
+						<input type="text" placeholder="Enter Name" name="name" required />
+						<input
+							type="text"
+							placeholder="Enter Surname"
+							name="surname"
+							required
+						/>
+					</div>
+					<div class="column">
+						<input
+							type="text"
+							placeholder="Enter Country"
+							name="coountry"
+							required
+						/>
+						<input
+							type="text"
+							placeholder="Enter Language"
+							name="laguage"
+							required
+						/>
+						<input type="text" placeholder="Enter City" name="city" required />
+						<input
+							type="text"
+							placeholder="Enter Streetname"
+							name="street"
+							required
+						/>
+						<input
+							type="text"
+							placeholder="Enter Zipcode"
+							name="zipcode"
+							required
+						/>
+						<input
+							type="text"
+							placeholder="Enter House Number"
+							name="housenumber"
+							required
+						/>
+					</div>
+					<div class="column">
+						<textarea form="register-form">
+                        xDD
+                    </textarea
+						>
+					</div>
+				</div>
+				<button type="submit">Register</button>
+				<p>Already have an account? <a href="">Login now.</a></p>
 			</form>
 		</div>
 	</body>
