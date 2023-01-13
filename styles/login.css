@@ -22,9 +22,19 @@ nav {
 	height: 100%;
 }
 
+nav h1 {
+	font-size: xx-large;
+	font-weight: 500;
+	letter-spacing: -0.19em;
+}
+nav a {
+	text-decoration: none;
+}
+
 .nav-links li {
 	display: inline-block;
 	margin: 0 20px;
+	font-size: large;
 }
 
 .nav-links a {
