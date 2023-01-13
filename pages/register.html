@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./../styles/register.css" />
+	</head>
+	<body>
+		<div class="header">
+			<nav>
+				<h1><a href="/index.html">eboy</a></h1>
+				<ul class="nav-links">
+					<li><a href="">basket</a></li>
+					<li><a href="">account</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="login-container">
+			<form name="register-form">
+				<div class="columns-container">
+					<div class="column">
+						<input
+							type="text"
+							placeholder="Enter Username"
+							name="uname"
+							required
+						/>
+						<input
+							type="password"
+							placeholder="Enter Password"
+							name="psw"
+							required
+						/>
+						<input
+							type="password"
+							placeholder="Repeat Password"
+							name="rpsw"
+							required
+						/>
+						<input
+							type="email"
+							placeholder="Enter Email"
+							name="email"
+							required
+						/>
+						<input type="text" placeholder="Enter Name" name="name" required />
+						<input
+							type="text"
+							placeholder="Enter Surname"
+							name="surname"
+							required
+						/>
+					</div>
+					<div class="column">
+						<input
+							type="text"
+							placeholder="Enter Country"
+							name="coountry"
+							required
+						/>
+						<input
+							type="text"
+							placeholder="Enter Language"
+							name="laguage"
+							required
+						/>
+						<input type="text" placeholder="Enter City" name="city" required />
+						<input
+							type="text"
+							placeholder="Enter Streetname"
+							name="street"
+							required
+						/>
+						<input
+							type="text"
+							placeholder="Enter Zipcode"
+							name="zipcode"
+							required
+						/>
+						<input
+							type="text"
+							placeholder="Enter House Number"
+							name="housenumber"
+							required
+						/>
+					</div>
+					<div class="column">
+						<textarea form="register-form">Bio</textarea>
+
+						<legend>sex:</legend>
+						<div>
+							<input value="eboy" id="eboy" type="radio" name="sex" />
+							<label for="eboy">Eboy</label>
+							<input value="egirl" id="egirl" type="radio" name="sex" />
+							<label for="egirl">Egirl</label>
+							<input value="none" id="none" type="radio" name="sex" />
+							<label for="none">None</label>
+						</div>
+
+						<legend>Are you a client or a supplier?:</legend>
+						<div>
+							<input value="client" id="client" type="radio" name="choice" />
+							<label for="client">Client</label>
+							<input
+								value="supplier"
+								id="supplier"
+								type="radio"
+								name="choice"
+							/>
+							<label for="supplier">Supplier</label>
+						</div>
+						<input
+							type="text"
+							placeholder="Enter Company Name"
+							name="company-name"
+							required
+						/>
+					</div>
+				</div>
+				<button type="submit">Register</button>
+				<p>Already have an account? <a href="./login.html">Login now.</a></p>
+			</form>
+		</div>
+	</body>
+</html>
