@@ -2,33 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-/* HEADER */
-
-.header {
-	height: 8vh;
-	width: 100vw;
-	padding: 0 8%;
-	background-color: antiquewhite;
-	position: relative;
-}
-
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 100%;
-}
-
-.nav-links li {
-	display: inline-block;
-	margin: 0 20px;
-}
-
-.nav-links a {
-	text-decoration: none;
-	color: black;
+	font-family: "Poppins";
 }
 
 /* LOGIN */

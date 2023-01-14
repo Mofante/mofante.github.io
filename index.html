@@ -2,11 +2,29 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/header.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script
+			src="https://kit.fontawesome.com/e41486a233.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="header">
 			<nav>
-				<h1>eboy</h1>
+				<a href="/index.html">
+					<h1>
+						<span style="color: red">e</span>
+						<span style="color: blue">b</span>
+						<span style="color: yellow">o</span>
+						<span style="color: green">y</span>
+					</h1>
+				</a>
 				<ul class="nav-links">
 					<li><a href="">basket</a></li>
 					<li><a href="./pages/login.html">account</a></li>
@@ -16,13 +34,28 @@
 
 		<div id="search-bar">
 			<form>
-				<input name="search" type="text" />
-				<input name="producer" type="text" />
-				<input name="cost-lower" type="number" />
-				<input name="cost-upper" type="number" />
-				<input name="rating-lower" type="number" />
-				<input name="rating-upper" type="number" />
-				<input type="button" />
+				<input id="searchword" placeholder="search" name="search" type="text" />
+				<input
+					id="producer-search"
+					placeholder="producer"
+					name="producer"
+					type="text"
+				/>
+				<div class="input-range">
+					<span>price:</span>
+					<input name="cost-lower" type="number" />
+					<span>$ -</span>
+					<input name="cost-upper" type="number" />
+					<span>$</span>
+				</div>
+				<div class="input-range">
+					<span>rating:</span>
+					<input name="rating-lower" type="number" />
+					<span>★ -</span>
+					<input name="rating-upper" type="number" />
+					<span>★</span>
+				</div>
+				<button><i class="fa-solid fa-magnifying-glass"></i></button>
 			</form>
 		</div>
 
