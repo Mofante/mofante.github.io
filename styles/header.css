@@ -36,7 +36,14 @@ nav a {
 	color: black;
 }
 
-nav > img {
+#logo-link {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo-link > img {
 	object-fit: scale-down;
 	height: 90%;
 }
