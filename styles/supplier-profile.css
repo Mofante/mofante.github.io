@@ -53,15 +53,14 @@
 	justify-content: space-between;
 }
 
-button {
+.button {
 	background-color: #04aa6d;
 	height: 48px;
 	border: none;
 	cursor: pointer;
 	width: 25%;
-}
-
-button a {
 	text-decoration: none;
 	color: white;
+	text-align: center;
+	line-height: 48px;
 }
