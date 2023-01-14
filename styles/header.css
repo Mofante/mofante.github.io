@@ -34,3 +34,8 @@ nav a {
 	text-decoration: none;
 	color: black;
 }
+
+nav > img {
+	object-fit: scale-down;
+	height: 90%;
+}
