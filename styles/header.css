@@ -1,7 +1,8 @@
 /* HEADER */
 
 .header {
-	height: 8vh;
+	height: 10vh;
+	min-height: 100px;
 	width: 100vw;
 	padding: 0 8%;
 	background-color: antiquewhite;
