@@ -14,7 +14,7 @@
 				<img src="./../images/logo.png">
 				<ul class="nav-links">
 					<li><a href="">basket</a></li>
-					<li><a href="./pages/login.html">account</a></li>
+					<li><a href="/pages/register.html">account</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -97,7 +97,7 @@
 							<input value="egirl" id="egirl" type="radio" name="sex" />
 							<label for="egirl">Egirl</label>
 							<input value="none" id="none" type="radio" name="sex" />
-							<label for="none">None</label>
+							<label for="none">Eneither</label>
 						</div>
 
 						<legend>Are you a client or a supplier?:</legend>
@@ -109,6 +109,7 @@
 								id="supplier"
 								type="radio"
 								name="choice"
+								required
 							/>
 							<label for="supplier">Supplier</label>
 						</div>
@@ -116,12 +117,13 @@
 							type="text"
 							placeholder="Enter Company Name"
 							name="company-name"
-							required
 						/>
 					</div>
 				</div>
 				<button type="submit">Register</button>
-				<p>Already have an account? <a href="./login.html">Login now.</a></p>
+				<p>
+					Already have an account? <a href="/pages/login.html">Login now.</a>
+				</p>
 			</form>
 		</div>
 	</body>

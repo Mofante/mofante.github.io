@@ -43,4 +43,18 @@ button {
 	cursor: pointer;
 	width: 90%;
 	margin-top: 10%;
+	display: none;
+}
+
+.button {
+	background-color: #04aa6d;
+	color: white;
+	padding: 18px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 90%;
+	margin-top: 10%;
+	text-decoration: none;
+	text-align: center;
 }
