@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+
+#form-container {
+    width: 60%;
+    margin: 5% 20%;
+}
+
+form {
+    display: flex;
+}
+
+#image-container {
+    background-color: antiquewhite;
+    width: 40%;
+    margin-right: 10%;
+    padding: 2%;
+    aspect-ratio: 1 / 1;
+}
+
+#data-container {
+    background-color: antiquewhite;
+    width: 50%;
+    height: fit-content;
+}
+
+#image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input {
+    display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+    background-color: white;
+    width: 80%;
+    margin: 5% 10%;
+    padding: 1em;
+    border: none;
+}
+
+button {
+    background-color: #04aa6d;
+    width: 50%;
+    margin: 0% 25% 5% 25%;
+    padding: 1em;
+    color: white;
+    border: none;
+}
