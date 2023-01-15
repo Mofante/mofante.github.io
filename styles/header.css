@@ -9,35 +9,47 @@
 
 /* TEMPLATE STYLES */
 
-.outer-box { /* white box with borders */
+.outer-box {
+	/* white box with borders */
 	background-color: white;
 	border-radius: 15px;
-	border: 1px solid #BFBFBF;
+	border: 1px solid #bfbfbf;
 }
 
-.inner-box { /* grey box */
-	background-color: #F6F6F6;
+.inner-box {
+	/* grey box */
+	background-color: #f6f6f6;
 	border-radius: 15px;
 	border: none;
 }
 
-.button { /* blue oval button */
-	background-color: #3772FF;
-	border-radius: 100vh;
+.button {
+	/* blue oval button */
+	background-color: #3772ff;
+	border-radius: 100vw;
 	color: white;
 	border: none;
 }
 
-h1 { /* Blue semi-bold header */
-	color : #1258FF;
-	font-weight: 600;
-	font-size: 2rem;
+.button-empty {
+	background-color: white;
+	border: 2px solid #3772ff;
+	border-radius: 100vw;
+	color: black;
 }
 
-h2 { /* Black medium-bold header */
+h1 {
+	/* Blue semi-bold header */
+	color: #1258ff;
+	font-weight: 600;
+	font-size: 1.95rem;
+}
+
+h2 {
+	/* Black medium-bold header */
 	color: black;
 	font-weight: 500;
-	font-size: 1.8rem;
+	font-size: 1.56rem;
 }
 
 /* HEADER */
