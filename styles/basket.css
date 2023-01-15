@@ -12,7 +12,7 @@
 
 #products-container {
     background-color: antiquewhite;
-    padding: 2% 5%;
+    padding: 2% 4%;
     width: 100%;
 }
 
@@ -24,7 +24,7 @@
     background-color: white;
     width: 100%;
     padding: 1%;
-    margin-top: 1%;
+    margin-bottom: 1%;
     display: flex;
 }
 
@@ -46,6 +46,13 @@
     border: none;
 }
 
+#summary {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+}
+
 form {
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +64,7 @@ form {
     background-color: antiquewhite;
     width: 47%;
     height: fit-content;
-    padding: 2% 5%;
+    padding: 2% 4%;
     margin: 3% 0;
 }
 
@@ -69,7 +76,8 @@ input {
 }
 
 #basket-data > button {
-    width: 10%;
+    width: 12%;
     aspect-ratio: 3 / 1;
     border: none;
+    font-size: 100%;
 }
