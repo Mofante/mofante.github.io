@@ -33,25 +33,28 @@
 		</div>
 		<div id="form-container">
 			<form name="new-product-form">
-				<div id="image-container">
-					<img src="/images/long-sleeve.jpg" />
+				<div id="image-container" class="outer-box">
+					<img src="./../images/long-sleeve.jpg" />
 				</div>
-				<div id="data-container">
-					<input type="text" placeholder="Product name" name="name" required />
-					<input type="number" placeholder="Price" name="price" required />
+				<div id="data-container" class="outer-box">
+					<input type="text" placeholder="Product name" name="name" required class="inner-box" />
+					<input type="number" placeholder="Price" name="price" required class="inner-box" />
+					<input type="number" placeholder="Quantity" name="quantity" required class="inner-box" />
 					<input
 						type="text"
 						placeholder="Description"
 						name="description"
 						required
+						class="inner-box"
 					/>
 					<input
 						type="text"
 						placeholder="Categories"
 						name="categories"
 						rquired
+						class="inner-box"
 					/>
-					<button type="submit">Add product</button>
+					<button type="submit" class="button">Add product</button>
 				</div>
 			</form>
 		</div>

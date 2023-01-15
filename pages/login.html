@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="./../styles/login.css" />
-		<link rel="stylesheet" href="/styles/header.css" />
+		<link rel="stylesheet" href="./../styles/header.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
@@ -29,13 +29,14 @@
 			</nav>
 		</div>
 		<div class="login-container">
-			<form>
-				<input type="text" placeholder="Enter Username" name="uname" required />
+			<form class="outer-box">
+				<input type="text" placeholder="Enter Username" name="uname" required class="inner-box"/>
 				<input
 					type="password"
 					placeholder="Enter Password"
 					name="psw"
 					required
+					class="inner-box"
 				/>
 				<button type="submit">login</button>
 				<a class="button" href="/pages/user-profile.html">Login</a>

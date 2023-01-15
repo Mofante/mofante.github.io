@@ -1,3 +1,45 @@
+/* GENERAL */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+
+/* TEMPLATE STYLES */
+
+.outer-box { /* white box with borders */
+	background-color: white;
+	border-radius: 15px;
+	border: 1px solid #BFBFBF;
+}
+
+.inner-box { /* grey box */
+	background-color: #F6F6F6;
+	border-radius: 15px;
+	border: none;
+}
+
+.button { /* blue oval button */
+	background-color: #3772FF;
+	border-radius: 100vh;
+	color: white;
+	border: none;
+}
+
+h1 { /* Blue semi-bold header */
+	color : #1258FF;
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+h2 { /* Black medium-bold header */
+	color: black;
+	font-weight: 500;
+	font-size: 1.8rem;
+}
+
 /* HEADER */
 
 .header {
