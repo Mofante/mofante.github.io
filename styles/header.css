@@ -5,8 +5,8 @@
 	min-height: 100px;
 	width: 100vw;
 	padding: 0 8%;
-	background-color: antiquewhite;
-	position: relative;
+	border-radius: 15px;
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
 }
 
 nav {
