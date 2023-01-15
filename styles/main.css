@@ -121,5 +121,16 @@ form {
 @media (max-width: 800px) {
 	form {
 		flex-direction: column;
+		align-items: center;
+	}
+	#searchword {
+		width: 100%;
+	}
+	#producer-search {
+		width: 100%;
+	}
+
+	.input-range input {
+		width: 20%;
 	}
 }
