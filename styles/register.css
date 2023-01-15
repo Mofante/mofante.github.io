@@ -83,6 +83,14 @@ button {
 	width: 28%;
 	align-items: center;
 }
+
+legend {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
 /*
 textarea {
 	width: 100%;
@@ -93,7 +101,7 @@ textarea {
 		flex-direction: column;
 	}
 	.login-container {
-		width: 50vw;
+		width: 90vw;
 		margin-bottom: 40px;
 	}
 	.column {
