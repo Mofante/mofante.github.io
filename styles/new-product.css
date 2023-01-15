@@ -19,7 +19,7 @@ form {
 #image-container {
     background-color: antiquewhite;
     width: 30%;
-    min-width: 400px;
+    min-width: min(400px, 90%);
     padding: 1%;
     height: fit-content;
     margin: 5% 3% 0 3%;
@@ -35,7 +35,7 @@ form {
 #data-container {
     background-color: antiquewhite;
     width: 30%;
-    min-width: 400px;
+    min-width: min(400px, 90%);
     height: fit-content;
     margin: 5% 3%;
 }
