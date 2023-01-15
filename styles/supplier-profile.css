@@ -8,10 +8,11 @@
 .profile-container {
 	background-color: antiquewhite;
 	width: 80vw;
-	height: 70vh;
+	height: fit-content;
+	min-height: 70vh;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	margin: auto;
 	margin-top: 50px;
 	padding: 30px;
@@ -51,6 +52,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
 .button {
@@ -63,4 +65,51 @@
 	color: white;
 	text-align: center;
 	line-height: 48px;
+}
+.product {
+	background-color: white;
+	width: 100%;
+	padding: 1%;
+	margin-bottom: 1%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product-name {
+	width: 40%;
+	text-align: center;
+}
+
+.product-price {
+	width: 40%;
+	text-align: center;
+}
+
+.products-container {
+	height: 100%;
+}
+
+@media (max-width: 800px) {
+	.profile-container {
+		width: 90vw;
+		flex-direction: column;
+	}
+
+	.details-container {
+		width: 100%;
+	}
+
+	.items-container {
+		width: 100%;
+	}
+
+	.items-header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.button {
+		width: 80%;
+	}
 }
