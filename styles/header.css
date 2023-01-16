@@ -23,6 +23,10 @@
 	border: none;
 }
 
+.inner-box:focus-visible {
+	border: 1px solid #3772ff;
+}
+
 .button {
 	/* blue oval button */
 	background-color: #3772ff;
@@ -99,5 +103,5 @@ nav a {
 
 #logo-link > img {
 	object-fit: scale-down;
-	height: 80%;
+	height: 65%;
 }
