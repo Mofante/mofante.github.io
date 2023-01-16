@@ -6,15 +6,14 @@
 }
 
 #basket {
-    margin: 3% 5%;
-    width: 90%;
+    width: 80%;
+    margin: 3% auto;
 }
 
 #products-container {
     padding: 2% 4%;
-    width: 80%;
-    min-width: min(1200px, 100%);
-    margin: 0 auto;
+    width: 94%;
+    margin: 0 3%;
 }
 
 .product {
@@ -23,12 +22,13 @@
     padding: 1% 2%;
     margin-bottom: 1%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
 }
 
 .product-first-column {
-    width: 60%;
+    width: 50%;
 }
 
 .product-price {
@@ -40,7 +40,6 @@
 }
 
 .product-remove {
-    width: 10%;
     font-size: 1.5rem;
     text-align: right;
     background: none;
@@ -56,15 +55,15 @@
 form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     width: 100%;
     min-width: min(300px, 100%);
     margin: 0 auto;
 }
 
 .data-container {
-    width: 37%;
-    min-width: min(600px, 100%);
+    width: 44%;
+    min-width: min(300px, 100%);
     height: fit-content;
     padding: 2% 4%;
     margin: 3% 3% 0 3%;
@@ -81,7 +80,31 @@ input {
     min-width: 120px;
     height: fit-content;
     aspect-ratio: 3 / 1;
-    margin: 3% 20%;
+    margin: 3%;
     font-size: 100%;
     color: white;
+}
+
+@media (max-width: 900px) {
+    #basket {
+        width: 90%;
+    }
+
+    #products-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .data-container {
+        width: 100%;
+        margin: 3% 0 0 0; 
+    }
+
+    #basket-data > button {
+        width: 30%;
+    }
+
+    form {
+        justify-content: center;
+    }
 }

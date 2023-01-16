@@ -20,10 +20,13 @@
 	/* grey box */
 	background-color: #f6f6f6;
 	border-radius: 15px;
-	border: none;
 }
 
-.inner-box:focus-visible {
+input {
+	border: 1px solid white;
+}
+
+input:focus-visible {
 	border: 1px solid #3772ff;
 }
 
