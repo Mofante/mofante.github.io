@@ -6,46 +6,35 @@
 }
 
 .profile-container {
-	background-color: antiquewhite;
-	width: 80vw;
-	height: fit-content;
-	min-height: 70vh;
+	width: 90vw;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	margin: auto;
 	margin-top: 50px;
-	padding: 30px;
+}
+
+.text-container {
+	padding: 10px;
 }
 
 .details-container p {
-	font-size: large;
-	line-height: 1.2em;
-	margin-bottom: 10px;
-}
-.profile-container h2 {
-	font-size: xx-large;
-	font-weight: 600;
-	margin-bottom: 10px;
+	font-size: 1.25rem;
 }
 
-.profile-container h3 {
-	font-size: x-large;
-	font-weight: 600;
-	margin-bottom: 10px;
-}
 .details-container {
 	width: 45%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	height: fit-content;
 }
 
 .items-container {
 	width: 45%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	height: 100%;
+	overflow-y: scroll;
+	height: inherit;
 }
 
 .items-header {
@@ -55,40 +44,52 @@
 	margin-bottom: 20px;
 }
 
-.button {
-	background-color: #04aa6d;
-	height: 48px;
-	border: none;
-	cursor: pointer;
-	width: 25%;
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	line-height: 48px;
-}
 .product {
-	background-color: white;
+	min-height: 4rem;
+	height: fit-content;
 	width: 100%;
 	padding: 1%;
 	margin-bottom: 1%;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
 
+.name-amount-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .product-name {
-	width: 40%;
-	text-align: center;
+	color: black;
+	font-weight: 400;
+	font-size: 1.56rem;
+	line-height: 1.7rem;
 }
 
 .product-price {
-	width: 40%;
-	text-align: center;
+	font-weight: 300;
+	font-size: 1.56rem;
 }
 
-.products-container {
-	height: 100%;
+.price-button-container i {
+	font-size: 1.4rem;
+}
+
+.price-button-container {
+	height: 3rem;
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#add-button {
+	text-decoration: none;
+	text-align: center;
+	min-width: 120px;
+	width: 20%;
+	padding: 10px;
 }
 
 @media (max-width: 800px) {
@@ -99,17 +100,18 @@
 
 	.details-container {
 		width: 100%;
+		margin-bottom: 20px;
 	}
 
 	.items-container {
 		width: 100%;
 	}
 
-	.items-header {
-		flex-direction: column;
-		align-items: center;
-	}
 	.button {
 		width: 80%;
+	}
+	#add-button {
+		min-width: none;
+		height: 50px;
 	}
 }

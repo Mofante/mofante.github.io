@@ -30,36 +30,48 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="login-container">
+
+		<div class="login-container outer-box">
 			<form name="register-form">
 				<div class="columns-container">
 					<div class="column">
 						<input
+							class="inner-box"
 							type="text"
 							placeholder="Enter Username"
 							name="uname"
 							required
 						/>
 						<input
+							class="inner-box"
 							type="password"
 							placeholder="Enter Password"
 							name="psw"
 							required
 						/>
 						<input
+							class="inner-box"
 							type="password"
 							placeholder="Repeat Password"
 							name="rpsw"
 							required
 						/>
 						<input
+							class="inner-box"
 							type="email"
 							placeholder="Enter Email"
 							name="email"
 							required
 						/>
-						<input type="text" placeholder="Enter Name" name="name" required />
 						<input
+							class="inner-box"
+							type="text"
+							placeholder="Enter Name"
+							name="name"
+							required
+						/>
+						<input
+							class="inner-box"
 							type="text"
 							placeholder="Enter Surname"
 							name="surname"
@@ -68,31 +80,42 @@
 					</div>
 					<div class="column">
 						<input
+							class="inner-box"
 							type="text"
 							placeholder="Enter Country"
 							name="coountry"
 							required
 						/>
 						<input
+							class="inner-box"
 							type="text"
 							placeholder="Enter Language"
 							name="laguage"
 							required
 						/>
-						<input type="text" placeholder="Enter City" name="city" required />
 						<input
+							class="inner-box"
+							type="text"
+							placeholder="Enter City"
+							name="city"
+							required
+						/>
+						<input
+							class="inner-box"
 							type="text"
 							placeholder="Enter Streetname"
 							name="street"
 							required
 						/>
 						<input
+							class="inner-box"
 							type="text"
 							placeholder="Enter Zipcode"
 							name="zipcode"
 							required
 						/>
 						<input
+							class="inner-box"
 							type="text"
 							placeholder="Enter House Number"
 							name="housenumber"
@@ -100,7 +123,7 @@
 						/>
 					</div>
 					<div class="column">
-						<textarea form="register-form">Bio</textarea>
+						<textarea class="inner-box" form="register-form">Bio</textarea>
 
 						<legend>Sex:</legend>
 						<div>
@@ -126,13 +149,14 @@
 							<label for="supplier">Supplier</label>
 						</div>
 						<input
+							class="inner-box"
 							type="text"
 							placeholder="Enter Company Name"
 							name="company-name"
 						/>
 					</div>
 				</div>
-				<button type="submit">Register</button>
+				<button class="button" type="submit">Register</button>
 				<p>
 					Already have an account? <a href="/pages/login.html">Login now.</a>
 				</p>
