@@ -11,6 +11,7 @@
 			src="https://kit.fontawesome.com/e41486a233.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="/scripts/form-validation.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -36,6 +37,7 @@
 				<div class="columns-container">
 					<div class="column">
 						<input
+							id="user-name"
 							class="inner-box"
 							type="text"
 							placeholder="Enter Username"
@@ -43,6 +45,7 @@
 							required
 						/>
 						<input
+							id="password"
 							class="inner-box"
 							type="password"
 							placeholder="Enter Password"
@@ -50,6 +53,7 @@
 							required
 						/>
 						<input
+							id="repeat-password"
 							class="inner-box"
 							type="password"
 							placeholder="Repeat Password"
@@ -57,6 +61,7 @@
 							required
 						/>
 						<input
+							id="email"
 							class="inner-box"
 							type="email"
 							placeholder="Enter Email"
@@ -64,6 +69,7 @@
 							required
 						/>
 						<input
+							id="name"
 							class="inner-box"
 							type="text"
 							placeholder="Enter Name"
@@ -71,6 +77,7 @@
 							required
 						/>
 						<input
+							id="surname"
 							class="inner-box"
 							type="text"
 							placeholder="Enter Surname"
@@ -80,6 +87,7 @@
 					</div>
 					<div class="column">
 						<input
+							id="country"
 							class="inner-box"
 							type="text"
 							placeholder="Enter Country"
@@ -87,6 +95,7 @@
 							required
 						/>
 						<input
+							id="language"
 							class="inner-box"
 							type="text"
 							placeholder="Enter Language"
@@ -94,6 +103,7 @@
 							required
 						/>
 						<input
+							id="city"
 							class="inner-box"
 							type="text"
 							placeholder="Enter City"
@@ -101,6 +111,7 @@
 							required
 						/>
 						<input
+							id="street-name"
 							class="inner-box"
 							type="text"
 							placeholder="Enter Streetname"
@@ -108,6 +119,7 @@
 							required
 						/>
 						<input
+							id="zipcode"
 							class="inner-box"
 							type="text"
 							placeholder="Enter Zipcode"
@@ -115,6 +127,7 @@
 							required
 						/>
 						<input
+							id="house-number"
 							class="inner-box"
 							type="text"
 							placeholder="Enter House Number"
@@ -123,7 +136,9 @@
 						/>
 					</div>
 					<div class="column">
-						<textarea class="inner-box" form="register-form">Bio</textarea>
+						<textarea id="bio" class="inner-box" form="register-form">
+Bio</textarea
+						>
 
 						<legend>Sex:</legend>
 						<div>
@@ -149,6 +164,7 @@
 							<label for="supplier">Supplier</label>
 						</div>
 						<input
+							id="company-name"
 							class="inner-box"
 							type="text"
 							placeholder="Enter Company Name"
