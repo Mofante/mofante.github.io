@@ -11,7 +11,7 @@
 			src="https://kit.fontawesome.com/e41486a233.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="/scripts/form-validation.js"></script>
+		<script defer src="/scripts/form-validation.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -36,104 +36,128 @@
 			<form name="register-form">
 				<div class="columns-container">
 					<div class="column">
-						<input
-							id="user-name"
-							class="inner-box"
-							type="text"
-							placeholder="Enter Username"
-							name="uname"
-							required
-						/>
-						<input
-							id="password"
-							class="inner-box"
-							type="password"
-							placeholder="Enter Password"
-							name="psw"
-							required
-						/>
-						<input
-							id="repeat-password"
-							class="inner-box"
-							type="password"
-							placeholder="Repeat Password"
-							name="rpsw"
-							required
-						/>
-						<input
-							id="email"
-							class="inner-box"
-							type="email"
-							placeholder="Enter Email"
-							name="email"
-							required
-						/>
-						<input
-							id="name"
-							class="inner-box"
-							type="text"
-							placeholder="Enter Name"
-							name="name"
-							required
-						/>
-						<input
-							id="surname"
-							class="inner-box"
-							type="text"
-							placeholder="Enter Surname"
-							name="surname"
-							required
-						/>
+						<div class="input-validation">
+							<input
+								id="user-name"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Username"
+								name="uname"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="password"
+								class="inner-box"
+								type="password"
+								placeholder="Enter Password"
+								name="psw"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="repeat-password"
+								class="inner-box"
+								type="password"
+								placeholder="Repeat Password"
+								name="rpsw"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="email"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Email"
+								name="email"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="name"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Name"
+								name="name"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="surname"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Surname"
+								name="surname"
+							/>
+							<div class="message"></div>
+						</div>
 					</div>
 					<div class="column">
-						<input
-							id="country"
-							class="inner-box"
-							type="text"
-							placeholder="Enter Country"
-							name="coountry"
-							required
-						/>
-						<input
-							id="language"
-							class="inner-box"
-							type="text"
-							placeholder="Enter Language"
-							name="laguage"
-							required
-						/>
-						<input
-							id="city"
-							class="inner-box"
-							type="text"
-							placeholder="Enter City"
-							name="city"
-							required
-						/>
-						<input
-							id="street-name"
-							class="inner-box"
-							type="text"
-							placeholder="Enter Streetname"
-							name="street"
-							required
-						/>
-						<input
-							id="zipcode"
-							class="inner-box"
-							type="text"
-							placeholder="Enter Zipcode"
-							name="zipcode"
-							required
-						/>
-						<input
-							id="house-number"
-							class="inner-box"
-							type="text"
-							placeholder="Enter House Number"
-							name="housenumber"
-							required
-						/>
+						<div class="input-validation">
+							<input
+								id="country"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Country"
+								name="coountry"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="language"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Language"
+								name="laguage"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="city"
+								class="inner-box"
+								type="text"
+								placeholder="Enter City (Optional)"
+								name="city"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="street-name"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Streetname (Optional)"
+								name="street"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="zipcode"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Zipcode (Optional)"
+								name="zipcode"
+							/>
+							<div class="message"></div>
+						</div>
+						<div class="input-validation">
+							<input
+								id="house-number"
+								class="inner-box"
+								type="text"
+								placeholder="Enter House Number (Optional)"
+								name="housenumber"
+							/>
+							<div class="message"></div>
+						</div>
 					</div>
 					<div class="column">
 						<textarea id="bio" class="inner-box" form="register-form">
@@ -141,17 +165,18 @@ Bio</textarea
 						>
 
 						<legend>Sex:</legend>
-						<div>
+						<div class="input-validation">
 							<input value="eboy" id="eboy" type="radio" name="sex" />
 							<label for="eboy">Eboy</label>
 							<input value="egirl" id="egirl" type="radio" name="sex" />
 							<label for="egirl">Egirl</label>
 							<input value="none" id="none" type="radio" name="sex" />
 							<label for="none">Eneither</label>
+							<div class="message"></div>
 						</div>
 
 						<legend>Are you a client or a supplier?:</legend>
-						<div>
+						<div class="input-validation">
 							<input value="client" id="client" type="radio" name="choice" />
 							<label for="client">Client</label>
 							<input
@@ -159,17 +184,20 @@ Bio</textarea
 								id="supplier"
 								type="radio"
 								name="choice"
-								required
 							/>
 							<label for="supplier">Supplier</label>
+							<div class="message"></div>
 						</div>
-						<input
-							id="company-name"
-							class="inner-box"
-							type="text"
-							placeholder="Enter Company Name"
-							name="company-name"
-						/>
+						<div class="input-validation">
+							<input
+								id="company-name"
+								class="inner-box"
+								type="text"
+								placeholder="Enter Company Name"
+								name="company-name"
+							/>
+							<div class="message"></div>
+						</div>
 					</div>
 				</div>
 				<button id="register" class="button" type="submit">Register</button>
