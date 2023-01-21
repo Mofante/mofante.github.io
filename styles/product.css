@@ -1,0 +1,142 @@
+#container {
+    display: flex;
+    width: 75%;
+    margin: 3% auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.product {
+	width: 40%;
+	font-size: 1.5rem;
+	padding: 10px;
+    height: fit-content;
+}
+
+.product-img {
+	background-color: #F6F6F6;
+	aspect-ratio: 1/1;
+	width: 100%;
+	overflow: hidden;
+}
+
+.product-img > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.product-description {
+	width: 100%;
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product-name {
+	width: 70%;
+	padding: 2%;
+}
+
+.product-price {
+	width: 30%;
+	text-align: right;
+	padding: 2%;
+
+}
+
+.product-add {
+	display: block;
+	background: white;
+	color: black;
+	border: 1px solid #3772ff;
+	border-radius: 100vh;
+	width: 35%;
+}
+
+.product-add:hover {
+	background-color: #3772ff;
+	color: white;
+}
+
+.product-rating {
+	padding: 0 2% 0 2%;
+	color: #3772ff;
+	font-weight: 500;
+}
+
+#product-information {
+    width: 55%;
+    height: 100%;
+}
+
+#product-information-text {
+    font-size: 1.3em;
+    padding: 3% 6%;
+    height: 38%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+#product-information-text-content {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#product-information-reviews {
+    padding: 3% 6%;
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+}
+
+#reviews-container {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.review {
+    width: 100%;
+    padding: 1% 4%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review-user {
+    font-size: 1.5em;
+}
+
+.review-rating {
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.review-text {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    #container {
+        width: 90%;
+    }
+    
+    .product {
+        width: 100%;
+        height: auto;
+        margin-bottom: 4%;
+    }
+
+    #product-information {
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .review {
+        font-size: 1.3em;
+    }
+}
