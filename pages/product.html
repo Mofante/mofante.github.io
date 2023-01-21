@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Product</title>
+		<link rel="stylesheet" href="./../styles/product.css" />
+		<link rel="stylesheet" href="./../styles/header.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/e41486a233.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="header">
+			<nav>
+				<a id="logo-link" href="/index.html"
+					><img src="./../images/logo.png"
+				/></a>
+				<ul class="nav-links">
+					<li>
+						<a href="/pages/basket.html"
+							><i class="fa-solid fa-basket-shopping"></i
+						></a>
+					</li>
+					<li>
+						<a href="/pages/supplier-profile.html"
+							><i class="fa-solid fa-user"></i
+						></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+        <div id="container">
+            <div class="product outer-box">
+                <div class="product-img">
+                    <img src="/images/eboy-long-sleeve.jpeg" />
+                </div>
+                <div class="product-description">
+                    <div class="product-name">Eboy long sleeve</div>
+                    <div class="product-price">1000$</div>
+                    <button class="product-add">Add to cart</button>
+                    <div class="product-rating">&#9733;4.5</div>
+                </div>
+            </div>
+            <div id="product-information">
+                <div id="product-information-text" class="outer-box">
+                    <h1>Description</h1>
+                    <div id="product-information-text-content" class="scrollable">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut nulla felis. Integer et arcu quam. Sed neque odio, porttitor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut nulla felis. Integer et arcu quam. Sed neque odio, porttitor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut nulla felis. Integer et arcu quam. Sed neque odio, porttitor.
+                    </div>
+                </div>
+                <div id="product-information-reviews" class="outer-box scrollable">
+                    <h1>Reviews</h1>
+                    <div id="reviews-container" class="scrollable">
+                        <div class="review inner-box">
+                            <div class="review-user">Mati (13)</div>
+                            <div class="review-rating">&#9733;0</div>
+                            <div class="review-text">The product is ugly</div>
+                        </div>
+                        <div class="review inner-box">
+                            <div class="review-user">Mati (13)</div>
+                            <div class="review-rating">&#9733;0</div>
+                            <div class="review-text">The product is ugly</div>
+                        </div>
+                        <div class="review inner-box">
+                            <div class="review-user">Mati (13)</div>
+                            <div class="review-rating">&#9733;0</div>
+                            <div class="review-text">The product is ugly</div>
+                        </div>
+                        <div class="review inner-box">
+                            <div class="review-user">Mati (13)</div>
+                            <div class="review-rating">&#9733;0</div>
+                            <div class="review-text">The product is ugly</div>
+                        </div>
+                        <div class="review inner-box">
+                            <div class="review-user">Mati (13)</div>
+                            <div class="review-rating">&#9733;0</div>
+                            <div class="review-text">The product is ugly</div>
+                        </div>
+                        <div class="review inner-box">
+                            <div class="review-user">Mati (13)</div>
+                            <div class="review-rating">&#9733;0</div>
+                            <div class="review-text">The product is ugly</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+    <script>
+        let resize = () => {
+            console.log(window.innerWidth);
+            if(window.innerWidth > 1000) {
+                let h = document.querySelector(".product").offsetHeight;
+                document.querySelector("#container").style.height = h + "px";
+            }
+        };
+
+        resize();
+        window.addEventListener('resize', resize);
+    </script>
+</html>

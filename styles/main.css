@@ -55,7 +55,8 @@ form {
 }
 
 #products {
-	width: 100vw;
+	width: 100%;
+	margin: 0;
 	padding: 0 8vw;
 	display: flex;
 	flex-wrap: wrap;
@@ -63,6 +64,7 @@ form {
 }
 
 .product {
+	cursor: pointer;
 	width: 25%;
 	min-width: 310px;
 	border: 1px solid white;
