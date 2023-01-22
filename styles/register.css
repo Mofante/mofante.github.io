@@ -106,12 +106,17 @@ p {
 
 #behavioral-data {
 	position: fixed;
-	bottom: 0;
-	right: 0;
-	width: 300px;
-	height: 300px;
+	bottom: 50%;
+	right: 50%;
+	transform: translate(50%, 50%);
+	background-color: white;
+	/*border: 1px solid #3772ff;/*#bfbfbf; */
+	border-radius: 15px;
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2);
 	display: none;
-	background-color: antiquewhite;
+	padding: 1.5% 4%;
+	font-size: 1.4em;
+	min-width: min(90%, 400px);
 }
 
 @media (max-width: 800px) {
@@ -130,5 +135,8 @@ p {
 	}
 	form {
 		margin-top: 0px;
+	}
+	#behavioral-data {
+		
 	}
 }
