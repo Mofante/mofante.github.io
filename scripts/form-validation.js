@@ -206,4 +206,11 @@ const validate = () => {
 	} else {
 		throwSuccess(language);
 	}
+
+    let valid = true;
+    for(let e of validityMap.values()) {
+        if(e == false) valid = false;
+    }
+
+    if(valid) showTrackingData();
 };
