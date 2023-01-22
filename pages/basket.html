@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Basket</title>
+		<title>Basket</title>
 		<link rel="stylesheet" href="./../styles/basket.css" />
 		<link rel="stylesheet" href="./../styles/header.css" />
 		<link
@@ -33,47 +33,99 @@
 				</ul>
 			</nav>
 		</div>
-        <div id="basket">
-            <div id="products-container" class="outer-box">
-                <h1>Products</h1>
-                <div class="product inner-box">
-                    <div class="product-first-column">
-                        <div class="product-name">Eboy long sleeve</div>
-                        <div class="product-amount">amount: 2</div>
-                    </div>
-                    <div class="product-price">1000$</div>
-                    <button class="product-remove"><i class="fa-solid fa-trash"></i></button>
-                </div>
-                <div class="product inner-box">
-                    <div class="product-first-column">
-                        <div class="product-name">Eboy long sleeve</div>
-                        <div class="product-amount">amount: 2</div>
-                    </div>
-                    <div class="product-price">1000$</div>
-                    <button class="product-remove"><i class="fa-solid fa-trash"></i></button>
-                </div>
-                <h2 id="summary">
-                    Total price:
-                    <div id="total-price">2000$</div>
-                </h2>
-            </div>
-            <form id="basket-data">
-                <div class="data-container outer-box">
-                    <h1>Delivery data</h1>
-                    <input type="text" placeholder="Country" name="country" required class="inner-box">
-                    <input type="text" placeholder="City" name="city" required class="inner-box">
-                    <input type="text" placeholder="Zip Code" name="zipcode" required class="inner-box">
-                    <input type="text" placeholder="Address" name="address" required class="inner-box">
-                    </div>
-                <div class="data-container outer-box">
-                    <h1>Payment data</h1>
-                    <input type="text" placeholder="Card owner" name="card-owner" required class="inner-box">
-                    <input type="text" placeholder="Card no." name="card-number" required class="inner-box">
-                    <input type="text" placeholder="Date of expiry" name="card-date" required class="inner-box">
-                    <input type="text" placeholder="CVV" name="card-cvv" required class="inner-box">
-                </div>
-                <button type="submit" class="button">Order</button>
-            </form>
-        </div>
+		<div id="basket">
+			<div id="products-container" class="outer-box">
+				<h1>Products</h1>
+				<div class="product inner-box">
+					<div class="product-first-column">
+						<div class="product-name">Eboy long sleeve</div>
+						<div class="product-amount">amount: 2</div>
+					</div>
+					<div class="product-price">1000$</div>
+					<button class="product-remove">
+						<i class="fa-solid fa-trash"></i>
+					</button>
+				</div>
+				<div class="product inner-box">
+					<div class="product-first-column">
+						<div class="product-name">Eboy long sleeve</div>
+						<div class="product-amount">amount: 2</div>
+					</div>
+					<div class="product-price">1000$</div>
+					<button class="product-remove">
+						<i class="fa-solid fa-trash"></i>
+					</button>
+				</div>
+				<h2 id="summary">
+					Total price:
+					<div id="total-price">2000$</div>
+				</h2>
+			</div>
+			<form id="basket-data">
+				<div class="data-container outer-box">
+					<h1>Delivery data</h1>
+					<input
+						type="text"
+						placeholder="Country"
+						name="country"
+						required
+						class="inner-box"
+					/>
+					<input
+						type="text"
+						placeholder="City"
+						name="city"
+						required
+						class="inner-box"
+					/>
+					<input
+						type="text"
+						placeholder="Zip Code"
+						name="zipcode"
+						required
+						class="inner-box"
+					/>
+					<input
+						type="text"
+						placeholder="Address"
+						name="address"
+						required
+						class="inner-box"
+					/>
+				</div>
+				<div class="data-container outer-box">
+					<h1>Payment data</h1>
+					<input
+						type="text"
+						placeholder="Card owner"
+						name="card-owner"
+						required
+						class="inner-box"
+					/>
+					<input
+						type="text"
+						placeholder="Card no."
+						name="card-number"
+						required
+						class="inner-box"
+					/>
+					<input
+						type="date"
+						placeholder="Date of expiry"
+						name="card-date"
+						required
+						class="inner-box"
+					/>
+					<input
+						type="text"
+						placeholder="CVV"
+						name="card-cvv"
+						required
+						class="inner-box"
+					/>
+				</div>
+				<button type="submit" class="button">Order</button>
+			</form>
+		</div>
 	</body>
 </html>
