@@ -31,6 +31,15 @@ validityMap.set(country, false);
 validityMap.set(language, false);
 validityMap.set(zipcode, false);
 
+supplier.onclick = () => {
+	companyName.disabled = false;
+};
+
+client.onclick = () => {
+	companyName.value = "";
+	companyName.disabled = true;
+};
+
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 
@@ -160,15 +169,6 @@ const validate = () => {
 		throwSuccess(companyName);
 	}
 
-	supplier.onclick = () => {
-		companyName.disabled = false;
-	};
-
-	client.onclick = () => {
-		companyName.value = "";
-		companyName.disabled = true;
-	};
-
 	//Null Checks
 
 	if (userNameValue === "") {
@@ -207,10 +207,61 @@ const validate = () => {
 		throwSuccess(language);
 	}
 
-    let valid = true;
-    for(let e of validityMap.values()) {
-        if(e == false) valid = false;
-    }
+	let valid = true;
+	for (let e of validityMap.values()) {
+		if (e == false) valid = false;
+	}
 
-    if(valid) showTrackingData();
+	if (valid) showTrackingData();
+
+	let sexValue = sex1.checked ? "eboy" : sex2.checked ? "egirl" : "eneither";
+
+	let accountTypeValue = client.checked ? "client" : "supplier";
+	if (valid)
+		window.confirm(
+			"User name: " +
+				userNameValue +
+				"\n" +
+				"Password: " +
+				passwordValue +
+				"\n" +
+				"Email: " +
+				emailValue +
+				"\n" +
+				"Name: " +
+				nameValue +
+				"\n" +
+				"Surname: " +
+				surnameValue +
+				"\n" +
+				"Country: " +
+				countryValue +
+				"\n" +
+				"Language: " +
+				languageValue +
+				"\n" +
+				"City: " +
+				city.value +
+				"\n" +
+				"Streetname: " +
+				streetname.value +
+				"\n" +
+				"ZIP code: " +
+				zipcodeValue +
+				"\n" +
+				"House number: " +
+				houseNumber.value +
+				"\n" +
+				"Bio: " +
+				bio.value +
+				"\n" +
+				"Sex: " +
+				sexValue +
+				"\n" +
+				"Account type: " +
+				accountTypeValue +
+				"\n" +
+				"Company name: " +
+				companyName.value
+		);
 };
