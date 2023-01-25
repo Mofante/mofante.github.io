@@ -83,14 +83,19 @@ const validate = () => {
 	throwSuccess(houseNumber);
 
 	//Username check
-	const userNamePattern = /.*[0-9!-\/:-@\[-\`{-~]{1,}$/;
+	const specialCharactersAndNumbers =
+		"!@#$%^&*()_+=-`~,<.>/?;:'|]}[{0123456789";
 	if (userNameValue.length < 5 || userNameValue.length > 12) {
 		throwError(userName, "User ID has to be between 5 and 12 characters!");
 	} else if (
 		userNameValue.charAt(0) !== userNameValue.charAt(0).toUpperCase()
 	) {
 		throwError(userName, "User ID has to start with a capital letter!");
-	} else if (!userNamePattern.test(userNameValue)) {
+	} else if (
+		!specialCharactersAndNumbers.includes(
+			userNameValue.charAt(userNameValue.length - 1)
+		)
+	) {
 		throwError(
 			userName,
 			"User ID has to end with a number or a special character!"
@@ -100,11 +105,28 @@ const validate = () => {
 	}
 
 	//Password check
-	const passwordPattern =
-		/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*[!-\/:-@\[-\`{-~]).{12,}$/;
+	let containsUppercase = false;
+	let containsLowercase = false;
+	let containsNumber = false;
+	let containsSymbol = false;
+
+	for (x of passwordValue.split("")) {
+		if (x >= "A" && x <= "Z") containsUppercase = true;
+		if (x >= "a" && x <= "z") containsLowercase = true;
+		if (x >= "0" && x <= "9") containsNumber = true;
+		if ("!@#$%^&*()_-+={[}];:'|<>?,./`~".includes(x)) containsSymbol = true;
+	}
+
 	if (passwordValue.length < 12) {
 		throwError(password, "Password must be at least 12 characters long!");
-	} else if (!passwordPattern.test(passwordValue)) {
+	} else if (
+		!(
+			containsLowercase &&
+			containsUppercase &&
+			containsNumber &&
+			containsSymbol
+		)
+	) {
 		throwError(
 			password,
 			"Password must contain uppercase letters, lowercase letters, numbers, and symbols!"
@@ -119,31 +141,62 @@ const validate = () => {
 		throwSuccess(repeatPassword);
 	}
 
-	const alphabetPattern = /^[a-zA-Z]+$/;
 	//Name check
-	if (!alphabetPattern.test(nameValue)) {
+	if (
+		!nameValue
+			.toUpperCase()
+			.split("")
+			.every((x) => x >= "A" && x <= "Z")
+	) {
 		throwError(firstName, "Your first name must only contain letters!");
 	} else {
 		throwSuccess(firstName);
 	}
 
-	if (!alphabetPattern.test(surnameValue)) {
+	if (
+		!surnameValue
+			.toUpperCase()
+			.split("")
+			.every((x) => x >= "A" && x <= "Z")
+	) {
 		throwError(surname, "Your surname must only contain letters!");
 	} else {
 		throwSuccess(surname);
 	}
 
 	//ZIP code check
-	const zipPattern = /^[0-9]{4}[A-Z]{2}$/;
-	if (!zipPattern.test(zipcodeValue) && zipcodeValue !== "") {
+	if (zipcodeValue == "") {
+		throwSuccess(zipcode);
+	} else if (
+		!(
+			zipcodeValue.length === 6 &&
+			zipcodeValue.charAt(0) >= "0" &&
+			zipcodeValue.charAt(0) <= "9" &&
+			zipcodeValue.charAt(1) >= "0" &&
+			zipcodeValue.charAt(1) <= "9" &&
+			zipcodeValue.charAt(2) >= "0" &&
+			zipcodeValue.charAt(2) <= "9" &&
+			zipcodeValue.charAt(3) >= "0" &&
+			zipcodeValue.charAt(3) <= "9" &&
+			zipcodeValue.charAt(4) >= "A" &&
+			zipcodeValue.charAt(4) <= "Z" &&
+			zipcodeValue.charAt(5) >= "A" &&
+			zipcodeValue.charAt(5) <= "Z"
+		)
+	) {
 		throwError(zipcode, "Your ZIP code must be of form 1234AB!");
 	} else {
 		throwSuccess(zipcode);
 	}
 
 	//email check
-	const emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-	if (!emailPattern.test(emailValue)) {
+	if (
+		!(
+			emailValue.split("@").length > 1 &&
+			emailValue.split("@").length < 3 &&
+			emailValue.split("@")[1].split(".").length > 1
+		)
+	) {
 		throwError(email, "Your email must be a valid email address!");
 	} else {
 		throwSuccess(email);
